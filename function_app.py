@@ -7,7 +7,7 @@ app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
 @app.route(route="getWeather")
 def getWeather(req: func.HttpRequest) -> func.HttpResponse:
-    apiKey = "e7a3b43fa8694572384ca1be977b2c42"
+    apiKey = apiKey
 
     # Get the Zip code from the query parameters.
     reqBody = req.get_json()
